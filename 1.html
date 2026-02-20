@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,16 +39,29 @@
     </script>
     <style>
         /* 自定义滚动条 */
-        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
-        
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
         body {
             font-family: system-ui, -apple-system, sans-serif;
-            overflow: hidden; /* 防止页面滚动 */
+            overflow: hidden;
+            /* 防止页面滚动 */
         }
-        
+
         /* 玻璃拟态类 */
         .glass-card {
             background-color: rgba(255, 255, 255, 0.08);
@@ -56,7 +70,7 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        
+
         .glass-panel {
             background-color: rgba(20, 20, 25, 0.5);
             backdrop-filter: blur(50px);
@@ -66,12 +80,16 @@
         }
     </style>
 </head>
+
 <body class="bg-black text-white min-h-screen selection:bg-white/30 selection:text-white">
 
     <!-- 沉浸式动态背景 -->
     <div class="absolute inset-0 z-0 pointer-events-none">
-        <div class="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-purple-900/30 rounded-full blur-[120px] animate-pulse-slow"></div>
-        <div class="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-blue-900/20 rounded-full blur-[120px] animate-pulse-slow" style="animation-delay: 2s;"></div>
+        <div
+            class="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-purple-900/30 rounded-full blur-[120px] animate-pulse-slow">
+        </div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-blue-900/20 rounded-full blur-[120px] animate-pulse-slow"
+            style="animation-delay: 2s;"></div>
         <div class="absolute top-[40%] left-[30%] w-[40%] h-[40%] bg-indigo-900/10 rounded-full blur-[100px]"></div>
     </div>
 
@@ -79,19 +97,23 @@
     <header class="sticky top-0 z-50 pt-5 px-6 pb-2">
         <div class="glass-card !rounded-full px-5 h-14 flex items-center justify-between mx-auto max-w-[1800px]">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full flex items-center justify-center border border-white/20 shadow-inner">
+                <div
+                    class="w-8 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full flex items-center justify-center border border-white/20 shadow-inner">
                     <i data-lucide="aperture" class="w-4 h-4 text-white"></i>
                 </div>
                 <h1 class="text-lg font-medium tracking-wide text-white/90">
-                    InfiniteTalk <span class="mx-2 text-white/20 font-light">|</span> <span class="text-white/60 font-light">空间工坊</span>
+                    InfiniteTalk <span class="mx-2 text-white/20 font-light">|</span> <span
+                        class="text-white/60 font-light">空间工坊</span>
                 </h1>
             </div>
             <div class="flex items-center gap-3">
-                <div class="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
+                <div
+                    class="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
                     <span class="w-1.5 h-1.5 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.5)]"></span>
                     <span class="text-[10px] font-medium text-white/70 uppercase tracking-wider">Online</span>
                 </div>
-                <div class="w-8 h-8 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-xs font-medium hover:bg-white/20 cursor-pointer transition-colors">
+                <div
+                    class="w-8 h-8 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-xs font-medium hover:bg-white/20 cursor-pointer transition-colors">
                     IP
                 </div>
             </div>
@@ -99,7 +121,7 @@
     </header>
 
     <main class="relative z-10 max-w-[1800px] mx-auto p-5 grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-88px)]">
-        
+
         <!-- 左侧控制台 (比例调整为 3/12，更窄) -->
         <div class="glass-panel lg:col-span-3 flex flex-col rounded-[1.5rem] overflow-hidden min-w-[320px]">
             <div class="p-5 pb-3 border-b border-white/5">
@@ -108,20 +130,22 @@
                     配置
                 </h2>
             </div>
-            
+
             <div class="flex-1 overflow-y-auto p-5 space-y-6 custom-scrollbar">
-                
+
                 <!-- Step 1: Voice Cloning -->
                 <section class="space-y-3">
                     <div class="flex items-center justify-between">
                         <label class="text-[10px] font-bold tracking-widest text-white/40 uppercase">01 • 声音克隆</label>
                         <i id="step1-check" data-lucide="check-circle-2" class="w-3.5 h-3.5 text-green-400 hidden"></i>
                     </div>
-                    
+
                     <!-- 未克隆状态 -->
-                    <div id="voice-upload-area" onclick="handleCloneVoice()" class="group relative overflow-hidden rounded-xl border border-dashed border-white/20 bg-white/5 hover:bg-white/10 transition-all cursor-pointer h-24 flex flex-col items-center justify-center gap-2">
+                    <div id="voice-upload-area" onclick="handleCloneVoice()"
+                        class="group relative overflow-hidden rounded-xl border border-dashed border-white/20 bg-white/5 hover:bg-white/10 transition-all cursor-pointer h-24 flex flex-col items-center justify-center gap-2">
                         <div id="voice-idle" class="flex flex-col items-center justify-center gap-2 w-full h-full">
-                            <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                            <div
+                                class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                                 <i data-lucide="mic" class="w-4 h-4 text-white"></i>
                             </div>
                             <span class="text-xs font-medium text-white/70">点击克隆声线</span>
@@ -133,9 +157,11 @@
                     </div>
 
                     <!-- 已克隆状态 -->
-                    <div id="voice-done-area" class="hidden bg-white/5 rounded-xl p-3 border border-white/10 flex items-center justify-between group hover:border-white/20 transition-all">
+                    <div id="voice-done-area"
+                        class="hidden bg-white/5 rounded-xl p-3 border border-white/10 flex items-center justify-between group hover:border-white/20 transition-all">
                         <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
+                            <div
+                                class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
                                 <i data-lucide="volume-2" class="w-4 h-4 text-white"></i>
                             </div>
                             <div class="overflow-hidden">
@@ -143,7 +169,8 @@
                                 <div class="text-[10px] text-white/40">Index 引擎就绪</div>
                             </div>
                         </div>
-                        <button onclick="resetVoice()" class="p-1.5 rounded-full hover:bg-white/10 text-white/50 hover:text-white transition-colors">
+                        <button onclick="resetVoice()"
+                            class="p-1.5 rounded-full hover:bg-white/10 text-white/50 hover:text-white transition-colors">
                             <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -153,21 +180,33 @@
                 <section class="space-y-3">
                     <label class="text-[10px] font-bold tracking-widest text-white/40 uppercase">02 • 视觉形象</label>
                     <div class="grid grid-cols-4 gap-2">
-                        <button onclick="document.getElementById('file-input').click()" class="aspect-square rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-all flex flex-col items-center justify-center gap-1 group">
-                            <i data-lucide="image-plus" class="w-5 h-5 text-white/50 group-hover:text-white transition-colors"></i>
+                        <button onclick="document.getElementById('file-input').click()"
+                            class="aspect-square rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-all flex flex-col items-center justify-center gap-1 group">
+                            <i data-lucide="image-plus"
+                                class="w-5 h-5 text-white/50 group-hover:text-white transition-colors"></i>
                             <span class="text-[10px] text-white/30 group-hover:text-white/60">上传</span>
-                            <input type="file" id="file-input" class="hidden" accept="image/*" onchange="handlePhotoUpload(this)">
+                            <input type="file" id="file-input" class="hidden" accept="image/*"
+                                onchange="handlePhotoUpload(this)">
                         </button>
-                        
+
                         <!-- Presets (Compact) -->
-                        <button onclick="setAvatar('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&q=80')" class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn active-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80" class="w-full h-full object-cover">
+                        <button
+                            onclick="setAvatar('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&q=80')"
+                            class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn active-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80"
+                                class="w-full h-full object-cover">
                         </button>
-                        <button onclick="setAvatar('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop&q=80')" class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80" class="w-full h-full object-cover">
+                        <button
+                            onclick="setAvatar('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop&q=80')"
+                            class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80"
+                                class="w-full h-full object-cover">
                         </button>
-                        <button onclick="setAvatar('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&q=80')" class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80" class="w-full h-full object-cover">
+                        <button
+                            onclick="setAvatar('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&q=80')"
+                            class="aspect-square rounded-xl overflow-hidden relative border-2 border-transparent hover:opacity-100 opacity-60 transition-all group avatar-btn">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80"
+                                class="w-full h-full object-cover">
                         </button>
                     </div>
                 </section>
@@ -177,18 +216,23 @@
                     <div class="flex items-center justify-between">
                         <label class="text-[10px] font-bold tracking-widest text-white/40 uppercase">03 • 内容脚本</label>
                         <div class="bg-white/5 p-0.5 rounded-lg flex border border-white/10">
-                            <button id="mode-ai" onclick="setMode('ai')" class="px-2.5 py-1 rounded-md text-[10px] font-medium transition-all flex items-center gap-1 bg-white/20 text-white shadow-sm">
+                            <button id="mode-ai" onclick="setMode('ai')"
+                                class="px-2.5 py-1 rounded-md text-[10px] font-medium transition-all flex items-center gap-1 bg-white/20 text-white shadow-sm">
                                 <i data-lucide="wand-2" class="w-3 h-3"></i> AI生成
                             </button>
-                            <button id="mode-manual" onclick="setMode('manual')" class="px-2.5 py-1 rounded-md text-[10px] font-medium transition-all flex items-center gap-1 text-white/40 hover:text-white/70">
+                            <button id="mode-manual" onclick="setMode('manual')"
+                                class="px-2.5 py-1 rounded-md text-[10px] font-medium transition-all flex items-center gap-1 text-white/40 hover:text-white/70">
                                 <i data-lucide="align-left" class="w-3 h-3"></i> 精准念稿
                             </button>
                         </div>
                     </div>
 
                     <div class="relative group">
-                        <textarea id="script-input" oninput="updateCharCount()" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all resize-none font-light h-28 leading-relaxed" placeholder="输入对话主题...">AI如何让老照片开口说话</textarea>
-                        <div class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-white/5 backdrop-blur-md border border-white/10 text-white/30 text-[10px]">
+                        <textarea id="script-input" oninput="updateCharCount()"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all resize-none font-light h-28 leading-relaxed"
+                            placeholder="输入对话主题...">AI如何让老照片开口说话</textarea>
+                        <div
+                            class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-white/5 backdrop-blur-md border border-white/10 text-white/30 text-[10px]">
                             <span id="char-count">13</span>
                         </div>
                     </div>
@@ -196,37 +240,53 @@
             </div>
 
             <div class="p-5 pt-3 border-t border-white/5 bg-black/20 backdrop-blur-md">
-                <button id="generate-btn" onclick="handleGenerate()" disabled class="w-full py-3.5 rounded-xl font-medium text-xs tracking-wide transition-all shadow-lg flex items-center justify-center gap-2 relative overflow-hidden group bg-white/5 text-white/30 cursor-not-allowed border border-white/5">
+                <button id="generate-btn" onclick="handleGenerate()" disabled
+                    class="w-full py-3.5 rounded-xl font-medium text-xs tracking-wide transition-all shadow-lg flex items-center justify-center gap-2 relative overflow-hidden group bg-white/5 text-white/30 cursor-not-allowed border border-white/5">
                     <span id="btn-content" class="flex items-center gap-2">
-                         请先完成步骤 01
+                        请先完成步骤 01
                     </span>
-                    <div id="btn-shine" class="hidden absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"></div>
+                    <div id="btn-shine"
+                        class="hidden absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent z-10">
+                    </div>
                 </button>
             </div>
         </div>
 
         <!-- 右侧预览 (比例调整为 9/12，更宽阔) -->
         <div class="glass-panel lg:col-span-9 relative flex flex-col group overflow-hidden rounded-[1.5rem]">
-            
+
             <div class="flex-1 relative bg-black/40 flex items-center justify-center overflow-hidden w-full h-full p-8">
-                
+
                 <!-- Background Blur (Ambilight) -->
-                <div id="bg-blur" class="absolute inset-0 bg-cover bg-center opacity-30 blur-[120px] scale-125 transition-all duration-[3s]" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&q=80')"></div>
+                <div id="bg-blur"
+                    class="absolute inset-0 bg-cover bg-center opacity-30 blur-[120px] scale-125 transition-all duration-[3s]"
+                    style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&q=80')">
+                </div>
 
                 <!-- Main Video Area (Dynamic Aspect Ratio) -->
                 <!-- 关键修改：移除 aspect-video，使用 h-full 和 object-contain 来适应竖屏人像 -->
-                <div id="video-wrapper" class="relative z-20 transition-all duration-700 scale-100 opacity-100 h-full w-full flex items-center justify-center">
-                    <div class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 h-full w-auto aspect-auto max-w-full bg-black/50">
+                <div id="video-wrapper"
+                    class="relative z-20 transition-all duration-700 scale-100 opacity-100 h-full w-full flex items-center justify-center">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 h-full w-auto aspect-auto max-w-full bg-black/50">
                         <!-- 图片容器 -->
-                        <img id="main-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&q=80" class="h-full w-auto object-contain transition-transform duration-[4s] ease-in-out">
-                        
+                        <img id="main-avatar"
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&q=80"
+                            class="h-full w-auto object-contain transition-transform duration-[4s] ease-in-out">
+
                         <!-- Overlay Effects -->
-                        <div id="play-glow" class="hidden absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent mix-blend-overlay pointer-events-none"></div>
-                        <div id="scan-line" class="hidden absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent h-[15%] w-full animate-scan-slow pointer-events-none backdrop-blur-[1px]"></div>
-                        
+                        <div id="play-glow"
+                            class="hidden absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent mix-blend-overlay pointer-events-none">
+                        </div>
+                        <div id="scan-line"
+                            class="hidden absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent h-[15%] w-full animate-scan-slow pointer-events-none backdrop-blur-[1px]">
+                        </div>
+
                         <!-- Play Button Overlay (Centered on image) -->
-                        <div id="play-overlay" onclick="togglePlay()" class="absolute inset-0 z-30 flex items-center justify-center cursor-pointer group/play">
-                            <div class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center transition-all duration-300 group-hover/play:scale-110 group-hover/play:bg-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                        <div id="play-overlay" onclick="togglePlay()"
+                            class="absolute inset-0 z-30 flex items-center justify-center cursor-pointer group/play">
+                            <div
+                                class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center transition-all duration-300 group-hover/play:scale-110 group-hover/play:bg-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
                                 <i data-lucide="play" class="w-8 h-8 text-white fill-white ml-1 opacity-90"></i>
                             </div>
                         </div>
@@ -234,24 +294,31 @@
                 </div>
 
                 <!-- Loading State (Moved Outside for Higher Hierarchy) -->
-                <div id="loading-overlay" class="hidden absolute inset-0 z-50 flex flex-col items-center justify-center backdrop-blur-md bg-black/40">
+                <div id="loading-overlay"
+                    class="hidden absolute inset-0 z-50 flex flex-col items-center justify-center backdrop-blur-md bg-black/40">
                     <div class="w-48 h-1 bg-white/10 rounded-full overflow-hidden mb-4">
-                        <div id="progress-bar" class="h-full bg-white shadow-[0_0_10px_white] transition-all duration-300 ease-out" style="width: 0%"></div>
+                        <div id="progress-bar"
+                            class="h-full bg-white shadow-[0_0_10px_white] transition-all duration-300 ease-out"
+                            style="width: 0%"></div>
                     </div>
-                    <div class="bg-black/40 backdrop-blur-xl px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 shadow-2xl">
+                    <div
+                        class="bg-black/40 backdrop-blur-xl px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 shadow-2xl">
                         <i data-lucide="sparkles" class="w-3 h-3 text-white animate-pulse"></i>
                         <span id="loading-text" class="text-xs font-light text-white tracking-wide">初始化...</span>
                     </div>
                 </div>
 
                 <!-- Control Bar (Floating Bottom) -->
-                <div id="control-bar" class="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 bg-black/60 backdrop-blur-2xl border border-white/10 rounded-full flex items-center px-6 gap-4 z-40 transition-all translate-y-24 opacity-0 shadow-2xl duration-500 min-w-[320px]">
-                    <button onclick="togglePlay()" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:scale-105 transition-transform">
+                <div id="control-bar"
+                    class="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 bg-black/60 backdrop-blur-2xl border border-white/10 rounded-full flex items-center px-6 gap-4 z-40 transition-all translate-y-24 opacity-0 shadow-2xl duration-500 min-w-[320px]">
+                    <button onclick="togglePlay()"
+                        class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:scale-105 transition-transform">
                         <i id="control-play-icon" data-lucide="play" class="w-3.5 h-3.5 fill-current ml-0.5"></i>
                     </button>
-                    
+
                     <div class="flex-1 flex flex-col justify-center gap-1 min-w-[120px]">
-                        <div class="flex justify-between text-[9px] font-medium text-white/50 uppercase tracking-widest">
+                        <div
+                            class="flex justify-between text-[9px] font-medium text-white/50 uppercase tracking-widest">
                             <span id="status-text">暂停</span>
                             <span>00:45</span>
                         </div>
@@ -263,10 +330,14 @@
                     <div class="h-6 w-[1px] bg-white/10"></div>
 
                     <div class="flex gap-1">
-                         <button class="p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors" title="下载">
+                        <button onclick="downloadResult()"
+                            class="p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+                            title="下载">
                             <i data-lucide="download" class="w-4 h-4"></i>
                         </button>
-                        <button class="p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors" title="全屏">
+                        <button
+                            class="p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+                            title="全屏">
                             <i data-lucide="maximize" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -274,7 +345,8 @@
             </div>
 
             <!-- Script Overlay (Right Top) -->
-            <div id="script-overlay" class="absolute top-6 right-6 w-72 max-h-[250px] overflow-y-auto bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-4 z-40 custom-scrollbar opacity-0 pointer-events-none transition-opacity duration-300 hover:opacity-100 group-hover:opacity-100">
+            <div id="script-overlay"
+                class="absolute top-6 right-6 w-72 max-h-[250px] overflow-y-auto bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-4 z-40 custom-scrollbar opacity-0 pointer-events-none transition-opacity duration-300 hover:opacity-100 group-hover:opacity-100">
                 <div class="flex items-center gap-2 mb-2 text-white/40 text-[10px] font-bold uppercase tracking-widest">
                     <i data-lucide="file-text" class="w-3 h-3"></i> 生成脚本
                 </div>
@@ -336,7 +408,7 @@
                 try {
                     const body = await res.json();
                     detail = body.detail || detail;
-                } catch (_) {}
+                } catch (_) { }
                 throw new Error(detail);
             }
             return res.json();
@@ -398,7 +470,7 @@
         function handlePhotoUpload(input) {
             if (input.files && input.files[0]) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     setAvatar(e.target.result);
                 }
                 reader.readAsDataURL(input.files[0]);
@@ -475,11 +547,21 @@
                     try {
                         const job = await api(`/api/jobs/${jobId}`);
                         els.progressBar.style.width = `${job.progress}%`;
-                        els.loadingText.innerText = `${job.message} (${job.selected_engine})`;
+
+                        // Engine display with fallback indication
+                        let engineText = job.selected_engine;
+                        if (job.fallback_reason) {
+                            engineText += ` (从优先引擎回退)`;
+                            els.loadingText.classList.add('text-orange-300'); // Highlight fallback
+                        }
+                        els.loadingText.innerText = `${job.message} [${engineText}]`;
 
                         if (job.status === 'completed') {
                             clearInterval(timer);
                             resolve(job);
+                        } else if (job.status === 'failed') {
+                            clearInterval(timer);
+                            reject(new Error(job.message));
                         }
                     } catch (error) {
                         clearInterval(timer);
@@ -504,7 +586,7 @@
                         avatar_url: state.avatarUrl,
                         script_mode: state.scriptMode,
                         script_input: els.scriptInput.value,
-                        preferred_engine: 'auto'
+                        preferred_engine: 'infinitetalk' // Requesting infinitetalk to trigger fallback demo
                     })
                 });
                 state.currentJobId = created.job_id;
@@ -512,6 +594,7 @@
                 finishGeneration(finalJob);
             } catch (error) {
                 leaveGeneratingUI();
+                els.loadingText.classList.remove('text-orange-300'); // Reset
                 alert('生成失败：' + error.message);
             } finally {
                 state.isGenerating = false;
@@ -521,10 +604,16 @@
         function finishGeneration(job) {
             state.hasGenerated = true;
             leaveGeneratingUI();
+            els.loadingText.classList.remove('text-orange-300'); // Reset
             els.scriptContent.innerText = job.generated_script || '脚本生成失败';
             els.scriptOverlay.classList.remove('pointer-events-none');
             els.scriptOverlay.style.pointerEvents = 'auto';
             els.playOverlay.classList.remove('hidden');
+
+            // Notification for fallback
+            if (job.fallback_reason) {
+                alert(`提示：已自动回退到 [${job.selected_engine}] 兼容模式。\n原因：${job.fallback_reason}`);
+            }
         }
 
         function togglePlay() {
@@ -554,7 +643,23 @@
             lucide.createIcons();
         }
 
+        async function downloadResult() {
+            if (!state.currentJobId) return;
+            try {
+                const result = await api(`/api/jobs/${state.currentJobId}/result`);
+                if (result.url) {
+                    alert(`模拟文件下载：${result.url}`);
+                    // window.open(result.url, '_blank');
+                } else {
+                    alert('文件尚未就绪');
+                }
+            } catch (err) {
+                alert('获取下载链接失败');
+            }
+        }
+
         updateCharCount();
     </script>
 </body>
+
 </html>
