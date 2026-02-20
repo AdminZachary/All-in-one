@@ -1,0 +1,19 @@
+INFO:     Started server process [14084]
+INFO:     Waiting for application startup.
+2026-02-21 01:20:02,113 | INFO     | app | Starting up All-in-one Backend MVP...
+2026-02-21 01:20:02,113 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:20:02,115 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:20:02,115 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:20:02,116 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:20:02,116 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:20:02,117 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:20:02,118 | INFO     | app | Initializing database schemas...
+2026-02-21 01:20:02,120 | INFO     | app | Database schemas initialized.
+2026-02-21 01:20:02,120 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:20:02,286 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:20:02,287 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+INFO:     Waiting for application shutdown.
+2026-02-21 01:20:02,287 | INFO     | app | Shutting down All-in-one Backend MVP...
+INFO:     Application shutdown complete.

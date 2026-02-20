@@ -86,12 +86,33 @@ def get_job_status(job_id: str):
         result_url=record.get("result_url") if record["status"] == "completed" else None
     )
 
+from fastapi.responses import FileResponse
+from backend.utils.config import OUTPUTS_DIR
+
 @api_router.get("/jobs/{job_id}/result")
 def get_job_result(job_id: str):
-    """Placeholder for fetching the actual file if we were saving files locally in chunks."""
     record = get_job(job_id)
     if not record or record["status"] != "completed":
         raise HTTPException(status_code=404, detail="Result not ready or job not found")
         
-    # Example logic returning a JSON object or redirect
-    return {"status": "ready", "url": record.get("result_url")}
+    return {"status": "ready", "url": f"/api/jobs/{job_id}/download", "filename": f"{job_id}.mp4"}
+
+@api_router.get("/jobs/{job_id}/download")
+def download_job_result(job_id: str):
+    record = get_job(job_id)
+    if not record or record["status"] != "completed":
+        raise HTTPException(status_code=404, detail="Result not ready or job not found")
+    
+    # The file path is defined by the engine adaptors, typically in OUTPUTS_DIR
+    # We can infer it or just search the outputs dir:
+    engine = record.get("selected_engine", "wan2gp")
+    expected_path = OUTPUTS_DIR / f"{job_id}_{engine}.mp4"
+    
+    if not expected_path.exists():
+        raise HTTPException(status_code=404, detail="Video file is missing from disk")
+        
+    return FileResponse(
+        path=expected_path,
+        filename=f"InfiniteTalk_{job_id}.mp4",
+        media_type="video/mp4"
+    )

@@ -5,3 +5,11 @@
 2026-02-21 00:51:38,484 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\data\outputs
 2026-02-21 00:51:38,485 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\logs
 2026-02-21 00:51:38,501 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:41:14,246 | INFO     | bootstrap | Cloning official Wan2GP repository for native execution...
+2026-02-21 01:41:20,407 | INFO     | bootstrap | Wan2GP cloned successfully to data/repos/Wan2GP.
+2026-02-21 01:41:20,407 | INFO     | bootstrap | Downloading InfiniteTalk offline model weights ...
+2026-02-21 01:41:21,384 | INFO     | bootstrap | InfiniteTalk model saved to S:\infinitetalk\data\models\infinitetalk_mock.json
+2026-02-21 01:42:40,156 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:42:40,158 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:42:40,158 | INFO     | bootstrap | Downloading a valid sample MP4 for frontend testing...
+2026-02-21 01:42:50,591 | INFO     | bootstrap | Sample MP4 downloaded.

@@ -644,17 +644,67 @@
         }
 
         async function downloadResult() {
-            if (!state.currentJobId) return;
+            if (!state.currentJobId || state.isDownloading) return;
+
             try {
                 const result = await api(`/api/jobs/${state.currentJobId}/result`);
-                if (result.url) {
-                    alert(`模拟文件下载：${result.url}`);
-                    // window.open(result.url, '_blank');
-                } else {
+                if (!result.url) {
                     alert('文件尚未就绪');
+                    return;
                 }
+
+                state.isDownloading = true;
+                els.loadingText.innerText = "正在下载打包的视频...";
+                els.loadingText.classList.remove('text-orange-300');
+                els.progressBar.style.width = "0%";
+                enterGeneratingUI(); // Reuse the loading overlay for download progress
+                els.generateBtn.innerHTML = `<div class="w-3 h-3 border-2 border-black/30 border-t-black rounded-full animate-spin"></div><span>下载中...</span>`;
+
+                const response = await fetch(result.url);
+                if (!response.ok) throw new Error("下载请求未获授权或文件不存在");
+
+                const contentLength = response.headers.get('content-length');
+                const total = parseInt(contentLength, 10) || 0;
+                let loaded = 0;
+
+                const reader = response.body.getReader();
+                const chunks = [];
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    chunks.push(value);
+                    loaded += value.length;
+
+                    if (total > 0) {
+                        const progress = (loaded / total) * 100;
+                        els.progressBar.style.width = `${progress}%`;
+                        els.loadingText.innerText = `下载进度: ${Math.round(progress)}%`;
+                    } else {
+                        els.progressBar.style.width = `100%`;
+                        els.loadingText.innerText = `已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`;
+                    }
+                }
+
+                const blob = new Blob(chunks, { type: 'video/mp4' });
+                const downloadUrl = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = result.filename || "InfiniteTalk_Generated.mp4";
+                document.body.appendChild(a);
+                a.click();
+
+                window.URL.revokeObjectURL(downloadUrl);
+                a.remove();
+
+                leaveGeneratingUI();
+                // Brief success state before reverting control bar
+
             } catch (err) {
-                alert('获取下载链接失败');
+                leaveGeneratingUI();
+                alert('下载中断或失败：' + err.message);
+            } finally {
+                state.isDownloading = false;
             }
         }
 

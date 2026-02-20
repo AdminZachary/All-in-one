@@ -1,0 +1,363 @@
+2026-02-21 01:10:33,984 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:10:33,984 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:10:33,985 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:10:33,986 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:10:33,987 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:10:33,987 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:10:34,006 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:10:41,657 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:10:41,660 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:10:41,660 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:10:41,661 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:10:41,661 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:10:41,661 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:10:41,664 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:10:53,074 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:10:53,075 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:10:53,076 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:10:53,077 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:10:53,077 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:10:53,078 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:10:53,080 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:10:59,478 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:10:59,478 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:10:59,480 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:10:59,480 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:10:59,480 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:10:59,481 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:10:59,483 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:04,933 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:04,933 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:04,934 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:04,935 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:04,935 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:04,935 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:04,937 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:09,571 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:09,573 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:09,573 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:09,574 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:09,574 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:09,574 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:09,576 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:17,444 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:17,444 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:17,444 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:17,446 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:17,446 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:17,446 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:17,449 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:22,369 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:22,370 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:22,371 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:22,371 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:22,371 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:22,371 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:22,374 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:26,453 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:26,453 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:26,454 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:26,456 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:26,456 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:26,456 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:26,457 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:32,465 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:32,466 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:32,466 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:32,466 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:32,466 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:32,467 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:32,469 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:38,418 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:38,419 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:38,419 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:38,420 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:38,420 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:38,420 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:38,421 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:11:42,792 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:11:42,792 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:11:42,792 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:11:42,792 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:11:42,794 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:11:42,794 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:11:42,796 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:12:13,535 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:12:13,536 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:12:13,536 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:12:13,537 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:12:13,537 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:12:13,538 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:12:13,540 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:12:18,819 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:12:18,820 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:12:18,820 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:12:18,821 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:12:18,821 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:12:18,822 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:12:18,825 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:12:37,172 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:12:37,173 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:12:37,174 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:12:37,174 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:12:37,175 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:12:37,175 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:12:37,177 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:12:40,495 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:12:40,495 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:12:40,496 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:12:40,497 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:12:40,497 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:12:40,497 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:12:40,499 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:13:08,350 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:13:08,350 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:13:08,352 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:13:08,352 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:13:08,353 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:13:08,354 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:13:08,356 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:14:02,224 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:14:02,225 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:14:02,225 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:14:02,226 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:14:02,227 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:14:02,228 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:14:02,229 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:14:21,428 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:14:21,428 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:14:21,429 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:14:21,429 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:14:21,430 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:14:21,430 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:14:21,432 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:14:52,915 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:14:52,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:14:52,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:14:52,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:14:52,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:14:52,917 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:14:52,919 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:21,064 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:21,065 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:21,065 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:21,065 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:21,066 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:21,066 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:21,068 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:21,217 | INFO     | bootstrap | Downloading Wan2GP offline model weights ...
+2026-02-21 01:19:22,244 | INFO     | bootstrap | Wan2GP model saved to S:\infinitetalk\dist\data\models\wan2gp_mock.json
+2026-02-21 01:19:22,244 | INFO     | bootstrap | Downloading InfiniteTalk offline model weights ...
+2026-02-21 01:19:22,513 | INFO     | bootstrap | InfiniteTalk model saved to S:\infinitetalk\dist\data\models\infinitetalk_mock.json
+2026-02-21 01:19:32,068 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:32,069 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:32,069 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:32,069 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:32,070 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:32,070 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:32,072 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:32,214 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:19:32,215 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:19:38,806 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:38,807 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:38,807 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:38,807 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:38,808 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:38,808 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:38,810 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:38,957 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:19:38,957 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:19:41,337 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:41,338 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:41,338 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:41,339 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:41,339 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:41,339 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:41,341 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:41,491 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:19:41,492 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:19:46,603 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:46,603 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:46,605 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:46,605 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:46,605 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:46,606 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:46,608 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:46,800 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:19:46,800 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:19:49,932 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:19:49,934 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:19:49,934 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:19:49,934 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:19:49,935 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:19:49,935 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:19:49,938 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:19:50,084 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:19:50,085 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:20:02,113 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:20:02,115 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:20:02,115 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:20:02,116 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:20:02,116 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:20:02,117 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:20:02,120 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:20:02,286 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:20:02,287 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:20:23,260 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:20:23,261 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:20:23,261 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:20:23,261 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:20:23,261 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:20:23,262 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:20:23,264 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:20:23,415 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:20:23,416 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:25:13,914 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:25:13,914 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:25:13,915 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:25:13,915 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:25:13,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:25:13,916 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:25:13,919 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:25:14,074 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:25:14,075 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:25:20,514 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:25:20,515 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:25:20,516 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:25:20,518 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:25:20,518 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:25:20,519 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:25:20,521 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:25:20,698 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:25:20,698 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:25:27,827 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:25:27,829 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:25:27,829 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:25:27,829 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:25:27,830 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:25:27,831 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:25:27,834 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:25:28,023 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:25:28,023 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:26:38,160 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:26:38,161 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:26:38,161 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:26:38,161 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:26:38,162 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:26:38,162 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:26:38,164 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:26:38,339 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:26:38,339 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:27:10,998 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:27:10,998 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:27:11,000 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:27:11,001 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:27:11,001 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:27:11,001 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:27:11,003 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:27:11,159 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:27:11,159 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:30:10,663 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:30:10,663 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:30:10,664 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:30:10,664 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:30:10,665 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:30:10,665 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:30:10,668 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:30:10,839 | INFO     | bootstrap | Wan2GP model already exists offline.
+2026-02-21 01:30:10,840 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:44:16,334 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:44:16,335 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:44:16,336 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:44:16,336 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:44:16,336 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:44:16,336 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:44:16,338 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:44:16,692 | INFO     | bootstrap | Cloning official Wan2GP repository for native execution...
+2026-02-21 01:44:23,699 | INFO     | bootstrap | Wan2GP cloned successfully to data/repos/Wan2GP.
+2026-02-21 01:44:23,699 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:44:23,699 | INFO     | bootstrap | Downloading a valid sample MP4 for frontend testing...
+2026-02-21 01:44:28,021 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:44:28,022 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:44:28,022 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:44:28,022 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:44:28,023 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:44:28,023 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:44:28,025 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:44:28,365 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:44:28,365 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:44:28,367 | INFO     | bootstrap | Downloading a valid sample MP4 for frontend testing...
+2026-02-21 01:44:33,846 | INFO     | bootstrap | Sample MP4 downloaded.
+2026-02-21 01:44:38,811 | INFO     | bootstrap | Sample MP4 downloaded.
+2026-02-21 01:44:54,719 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:44:54,720 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:44:54,720 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:44:54,720 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:44:54,721 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:44:54,721 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:44:54,723 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:44:55,034 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:44:55,034 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:44:58,282 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:44:58,283 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:44:58,283 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:44:58,283 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:44:58,284 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:44:58,285 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:44:58,287 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:44:58,595 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:44:58,596 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:49:15,520 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:49:15,521 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:49:15,522 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:49:15,523 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:49:15,524 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:49:15,524 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:49:15,529 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:49:16,130 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:49:16,131 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:51:14,654 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:51:14,658 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:51:14,659 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:51:14,660 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:51:14,661 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:51:14,664 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:51:14,670 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:51:15,629 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:51:15,629 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:56:08,940 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:56:08,942 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:56:08,942 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:56:08,942 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:56:08,944 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:56:08,944 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:56:08,949 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:56:09,517 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:56:09,517 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 01:59:32,905 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 01:59:32,908 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 01:59:32,909 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 01:59:32,910 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 01:59:32,910 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 01:59:32,911 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 01:59:32,915 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 01:59:33,465 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 01:59:33,466 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 02:00:43,309 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 02:00:43,310 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 02:00:43,310 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 02:00:43,311 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 02:00:43,312 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 02:00:43,313 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 02:00:43,317 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 02:00:44,193 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 02:00:44,194 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 02:00:47,137 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 02:00:47,139 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 02:00:47,139 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 02:00:47,140 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 02:00:47,141 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 02:00:47,142 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 02:00:47,147 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 02:00:47,916 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
+2026-02-21 02:00:47,917 | INFO     | bootstrap | InfiniteTalk model already exists offline.
