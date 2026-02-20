@@ -13,9 +13,10 @@ from backend.utils.logger import app_logger
 
 @contextlib.asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup
     app_logger.info("Starting up All-in-one Backend MVP...")
     setup_environment()
+    from backend.utils.downloader import download_mock_models
+    download_mock_models()
     yield
     # Shutdown
     app_logger.info("Shutting down All-in-one Backend MVP...")

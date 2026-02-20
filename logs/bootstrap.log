@@ -1,0 +1,7 @@
+2026-02-21 00:51:38,483 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 00:51:38,483 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\data
+2026-02-21 00:51:38,483 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\data\uploads
+2026-02-21 00:51:38,483 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\data\cache
+2026-02-21 00:51:38,484 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\data\outputs
+2026-02-21 00:51:38,485 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\logs
+2026-02-21 00:51:38,501 | INFO     | bootstrap | Environment setup complete.

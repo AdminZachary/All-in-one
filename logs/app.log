@@ -1,0 +1,14 @@
+2026-02-21 00:51:38,482 | INFO     | app | Starting up All-in-one Backend MVP...
+2026-02-21 00:51:38,485 | INFO     | app | Initializing database schemas...
+2026-02-21 00:51:38,501 | INFO     | app | Database schemas initialized.
+2026-02-21 00:52:17,798 | INFO     | app | Created new voice clone: voice_e25d4843
+2026-02-21 00:52:23,894 | INFO     | app | Registered new job: job_ab9fedf0 with preferred engine infinitetalk
+2026-02-21 00:52:23,907 | INFO     | app | [InfiniteTalk] Starting generation for job job_ab9fedf0
+2026-02-21 00:52:24,913 | WARNING  | app | [InfiniteTalk] Simulated failure for job job_ab9fedf0 to trigger fallback.
+2026-02-21 00:52:24,925 | INFO     | app | [Wan2GP] Starting generation for job job_ab9fedf0
+2026-02-21 00:52:28,934 | INFO     | app | [Wan2GP] Completed job job_ab9fedf0
+2026-02-21 00:52:56,196 | INFO     | app | Created new voice clone: voice_58bbcbfa
+2026-02-21 00:53:47,371 | INFO     | app | Created new voice clone: voice_b7918205
+2026-02-21 00:53:47,382 | INFO     | app | Registered new job: job_e89467d8 with preferred engine infinitetalk
+2026-02-21 00:53:47,392 | INFO     | app | [InfiniteTalk] Starting generation for job job_e89467d8
+2026-02-21 00:53:51,367 | INFO     | app | [InfiniteTalk] Completed job job_e89467d8 successfully
