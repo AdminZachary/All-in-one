@@ -175,3 +175,10 @@
 系统默认使用 Wan2GP 保障稳定，并可智能回退。" --output "S:\infinitetalk\dist\data\outputs\job_57e7e35f_wan2gp.mp4"
 2026-02-21 02:01:10,615 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
 2026-02-21 02:01:15,637 | INFO     | app | [Wan2GP] Completed job job_57e7e35f successfully under Native execution bridge.
+2026-02-21 12:28:11,667 | INFO     | app | Starting up All-in-one Backend MVP...
+2026-02-21 12:28:11,672 | INFO     | app | Initializing database schemas...
+2026-02-21 12:28:11,675 | INFO     | app | Database schemas initialized.
+2026-02-21 12:28:47,162 | INFO     | app | Created new voice clone: voice_c5e1de91
+2026-02-21 12:28:49,209 | INFO     | app | Registered new job: job_0044138e with preferred engine infinitetalk
+2026-02-21 12:28:49,225 | INFO     | app | [InfiniteTalk] Starting generation for job job_0044138e
+2026-02-21 12:28:54,451 | INFO     | app | [InfiniteTalk] Completed job job_0044138e successfully

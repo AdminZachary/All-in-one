@@ -361,3 +361,12 @@
 2026-02-21 02:00:47,147 | INFO     | bootstrap | Environment setup complete.
 2026-02-21 02:00:47,916 | INFO     | bootstrap | Native Wan2GP repository already exists offline.
 2026-02-21 02:00:47,917 | INFO     | bootstrap | InfiniteTalk model already exists offline.
+2026-02-21 12:28:11,668 | INFO     | bootstrap | Starting environment setup...
+2026-02-21 12:28:11,670 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data
+2026-02-21 12:28:11,670 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\uploads
+2026-02-21 12:28:11,671 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\cache
+2026-02-21 12:28:11,672 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\data\outputs
+2026-02-21 12:28:11,672 | INFO     | bootstrap | Ensured directory exists: S:\infinitetalk\dist\logs
+2026-02-21 12:28:11,676 | INFO     | bootstrap | Environment setup complete.
+2026-02-21 12:28:12,270 | INFO     | bootstrap | Wan2GP source is now embedded natively. Skipping runtime clone.
+2026-02-21 12:28:12,270 | INFO     | bootstrap | InfiniteTalk model already exists offline.

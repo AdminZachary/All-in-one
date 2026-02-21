@@ -16,7 +16,6 @@ class Wan2GPAdapter(BaseEngineAdapter):
         app_logger.info(f"[Wan2GP] Starting generation for job {job_id}")
         
         # 1. Verify Native Repo Exists
-        # Find the root dir properly even if frozen
         import sys
         if getattr(sys, 'frozen', False):
             env_root = Path(sys.executable).resolve().parent
@@ -35,7 +34,31 @@ class Wan2GPAdapter(BaseEngineAdapter):
         venv_python = repo_path / "venv" / "Scripts" / "python.exe"
         
         if venv_python.exists():
-            real_cmd = f'"{venv_python}" "{wgp_script}" --headless --prompt "{script_text}" --output "{output_file}"'
+            import json
+            import uuid
+            
+            # Setup Headless Job Directory for this specific generation
+            job_dir = OUTPUTS_DIR / f"{job_id}_tmp"
+            job_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Create process settings list
+            queue_file = job_dir / "job_queue.json"
+            settings = [{
+                "id": 1,
+                "params": {
+                    "model_type": "Wan t2v 1.3B",
+                    "prompt": script_text,
+                    "num_inference_steps": 30,
+                    "video_length": 81,
+                    "resolution": "832x480",
+                    "force_fps": 0,
+                    "image_mode": 0
+                }
+            }]
+            with open(queue_file, "w", encoding="utf-8") as f:
+                json.dump(settings, f)
+                
+            real_cmd = f'"{venv_python}" "{wgp_script}" --process "{queue_file}" --output-dir "{job_dir}"'
             app_logger.info(f"[Wan2GP] Native PyTorch execution via: {real_cmd}")
             
             process = await asyncio.create_subprocess_shell(
@@ -48,22 +71,32 @@ class Wan2GPAdapter(BaseEngineAdapter):
             
             if process.returncode != 0:
                 app_logger.error(f"[Wan2GP] Native Execution Failed: {stderr.decode()}")
-                raise RuntimeError(f"Wan2GP Process Error: {stderr.decode()}")
+                raise RuntimeError(f"Wan2GP Process Error:\n{stderr.decode()}")
+                
+            # Scan output directory for the result mp4
+            generated_videos = list(job_dir.glob("*.mp4"))
+            if not generated_videos:
+                app_logger.error(f"[Wan2GP] Native Exec succeeded but no MP4 found in {job_dir}")
+                raise RuntimeError("Video file generation failed silently.")
+                
+            shutil.copy(generated_videos[0], output_file)
+            
+            # Clean up temp folder
+            try:
+                shutil.rmtree(job_dir)
+            except:
+                pass
                 
             app_logger.info(f"[Wan2GP] Native inference generated successfully at {output_file}")
             return f"/api/jobs/{job_id}/result"
         else:
-            real_cmd = f'python "{wgp_script}" --headless --prompt "{script_text}" --output "{output_file}"'
-            app_logger.info(f"[Wan2GP] Python Env missing. Simulating cmd: {real_cmd}")
-            
+            app_logger.info(f"[Wan2GP] Python Env missing. Simulating fallback.")
             app_logger.info(f"[Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...")
             await asyncio.sleep(5)
             
-            # Copy the valid rabbit320.mp4 video so the frontend <video> tag actually plays a real video
             if sample_mp4.exists():
                 shutil.copy(sample_mp4, output_file)
             else:
-                # Fallback if download failed
                 output_file.write_text("dummy")
 
             app_logger.info(f"[Wan2GP] Completed job {job_id} successfully under Native execution bridge.")

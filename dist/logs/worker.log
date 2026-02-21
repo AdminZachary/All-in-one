@@ -6,3 +6,5 @@
 2026-02-21 02:01:10,588 | INFO     | worker | Worker picked up job job_57e7e35f requesting engine 'infinitetalk'
 2026-02-21 02:01:10,602 | WARNING  | worker | Engine infinitetalk failed for job_57e7e35f. Reason: InfiniteTalk engine subprocess encountered a VRAM OOM error or timeout.. Falling back to wan2gp.
 2026-02-21 02:01:15,659 | INFO     | worker | Job job_57e7e35f successfully finalized using wan2gp.
+2026-02-21 12:28:49,211 | INFO     | worker | Worker picked up job job_0044138e requesting engine 'infinitetalk'
+2026-02-21 12:28:54,467 | INFO     | worker | Job job_0044138e successfully finalized using infinitetalk.

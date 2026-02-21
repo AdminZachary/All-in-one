@@ -586,7 +586,7 @@
                         avatar_url: state.avatarUrl,
                         script_mode: state.scriptMode,
                         script_input: els.scriptInput.value,
-                        preferred_engine: 'infinitetalk' // Requesting infinitetalk to trigger fallback demo
+                        preferred_engine: state.selectedEngine // Use cloned voice engine (wan2gp)
                     })
                 });
                 state.currentJobId = created.job_id;
