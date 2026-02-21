@@ -12,10 +12,12 @@ class CreateJobRequest(BaseModel):
     script_mode: Literal["ai", "manual"]
     script_input: str = Field(min_length=1)
     preferred_engine: Literal["auto", "wan2gp", "infinitetalk"] = "auto"
+    wangp_model: str = "Wan t2v 1.3B"
 
 class CreateJobResponse(BaseModel):
     job_id: str
     selected_engine: Literal["wan2gp", "infinitetalk"]
+    wangp_model: str
 
 class JobStatusResponse(BaseModel):
     job_id: str
@@ -23,6 +25,7 @@ class JobStatusResponse(BaseModel):
     progress: int
     message: str
     selected_engine: str
+    wangp_model: str
     fallback_reason: str | None = None
     generated_script: str | None = None
     result_url: str | None = None

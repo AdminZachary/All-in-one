@@ -49,6 +49,7 @@ def create_job(payload: CreateJobRequest, background_tasks: BackgroundTasks):
         "script_input": payload.script_input,
         "preferred_engine": initial_engine,
         "selected_engine": initial_engine,
+        "wangp_model": payload.wangp_model,
         "status": "queued",
         "progress": 0,
         "message": "排队中...",
@@ -64,10 +65,11 @@ def create_job(payload: CreateJobRequest, background_tasks: BackgroundTasks):
         voice_id=payload.voice_id,
         avatar_url=payload.avatar_url,
         script_text=generated_script,
-        preferred_engine=initial_engine
+        preferred_engine=initial_engine,
+        wangp_model=payload.wangp_model
     )
 
-    return CreateJobResponse(job_id=job_id, selected_engine=initial_engine)
+    return CreateJobResponse(job_id=job_id, selected_engine=initial_engine, wangp_model=payload.wangp_model)
 
 @api_router.get("/jobs/{job_id}", response_model=JobStatusResponse)
 def get_job_status(job_id: str):
@@ -81,6 +83,7 @@ def get_job_status(job_id: str):
         progress=record["progress"],
         message=record["message"],
         selected_engine=record["selected_engine"],
+        wangp_model=record.get("wangp_model", "Wan t2v 1.3B"),
         fallback_reason=record.get("fallback_reason"),
         generated_script=record.get("generated_script") if record["status"] == "completed" else None,
         result_url=record.get("result_url") if record["status"] == "completed" else None

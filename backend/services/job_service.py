@@ -34,7 +34,7 @@ class JobService:
             pass # Routine cancellation is fine
 
     @staticmethod
-    async def process_job_async(job_id: str, voice_id: str, avatar_url: str, script_text: str, preferred_engine: str):
+    async def process_job_async(job_id: str, voice_id: str, avatar_url: str, script_text: str, preferred_engine: str, wangp_model: str = "Wan t2v 1.3B"):
         """The main orchestration function running in the background."""
         worker_logger.info(f"Worker picked up job {job_id} requesting engine '{preferred_engine}'")
         update_job_status(job_id, {"status": "running", "message": "解析空间特征...", "progress": 10})
@@ -48,7 +48,7 @@ class JobService:
             
             try:
                  # Attempt processing with the primary engine
-                 result_url = await primary_engine.process_job(job_id, voice_id, avatar_url, script_text)
+                 result_url = await primary_engine.process_job(job_id, voice_id, avatar_url, script_text, wangp_model)
             except Exception as e:
                 # Fallback Strategy: If infinitetalk fails, fallback to wan2gp natively.
                 if selected_engine == "infinitetalk":
@@ -64,7 +64,7 @@ class JobService:
                     })
                     
                     fallback_engine = JobService._get_engine("wan2gp")
-                    result_url = await fallback_engine.process_job(job_id, voice_id, avatar_url, script_text)
+                    result_url = await fallback_engine.process_job(job_id, voice_id, avatar_url, script_text, wangp_model)
                 else:
                     raise e # No fallback available for wan2gp failure
 

@@ -12,7 +12,7 @@ class InfiniteTalkAdapter(BaseEngineAdapter):
     def name(self) -> str:
         return "infinitetalk"
 
-    async def process_job(self, job_id, voice_id, avatar_url, script_text) -> str:
+    async def process_job(self, job_id, voice_id, avatar_url, script_text, wangp_model="Wan t2v 1.3B") -> str:
         app_logger.info(f"[InfiniteTalk] Starting generation for job {job_id}")
         
         # Verify the model exists

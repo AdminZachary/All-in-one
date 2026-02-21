@@ -15,7 +15,8 @@ class BaseEngineAdapter(abc.ABC):
         job_id: str,
         voice_id: str,
         avatar_url: str,
-        script_text: str
+        script_text: str,
+        wangp_model: str = "Wan t2v 1.3B"
     ) -> str:
         """
         Executes the AI task.

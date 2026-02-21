@@ -12,7 +12,7 @@ class Wan2GPAdapter(BaseEngineAdapter):
     def name(self) -> str:
         return "wan2gp"
 
-    async def process_job(self, job_id, voice_id, avatar_url, script_text) -> str:
+    async def process_job(self, job_id, voice_id, avatar_url, script_text, wangp_model="Wan t2v 1.3B") -> str:
         app_logger.info(f"[Wan2GP] Starting generation for job {job_id}")
         
         # 1. Verify Native Repo Exists
@@ -46,7 +46,7 @@ class Wan2GPAdapter(BaseEngineAdapter):
             settings = [{
                 "id": 1,
                 "params": {
-                    "model_type": "Wan t2v 1.3B",
+                    "model_type": wangp_model,
                     "prompt": script_text,
                     "num_inference_steps": 30,
                     "video_length": 81,
