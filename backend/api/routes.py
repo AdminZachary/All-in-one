@@ -53,6 +53,7 @@ def create_job(payload: CreateJobRequest, background_tasks: BackgroundTasks):
         "status": "queued",
         "progress": 0,
         "message": "排队中...",
+        "generated_script": generated_script,
     }
     
     save_job(job_data)

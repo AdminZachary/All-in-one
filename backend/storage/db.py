@@ -84,10 +84,10 @@ def save_job(job_data: dict):
         conn.execute('''
             INSERT INTO jobs (
                 job_id, voice_id, avatar_url, script_mode, script_input,
-                preferred_engine, selected_engine, status, progress, message
+                preferred_engine, selected_engine, status, progress, message, generated_script
             ) VALUES (
                 :job_id, :voice_id, :avatar_url, :script_mode, :script_input,
-                :preferred_engine, :selected_engine, :status, :progress, :message
+                :preferred_engine, :selected_engine, :status, :progress, :message, :generated_script
             )
         ''', job_data)
         conn.commit()

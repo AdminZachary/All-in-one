@@ -3,3 +3,4 @@
 2026-02-21 00:52:28,946 | INFO     | worker | Job job_ab9fedf0 successfully finalized using wan2gp.
 2026-02-21 00:53:47,384 | INFO     | worker | Worker picked up job job_e89467d8 requesting engine 'infinitetalk'
 2026-02-21 00:53:51,376 | INFO     | worker | Job job_e89467d8 successfully finalized using infinitetalk.
+2026-02-22 01:01:32,330 | INFO     | worker | Worker picked up job job_066ec675 requesting engine 'wan2gp'

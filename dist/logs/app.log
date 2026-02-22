@@ -216,3 +216,36 @@
 2026-02-21 15:33:54,612 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
 2026-02-21 15:33:54,612 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
 2026-02-21 15:33:59,632 | INFO     | app | [Wan2GP] Completed job job_fb0130df successfully under Native execution bridge.
+2026-02-21 23:31:39,907 | INFO     | app | Starting up All-in-one Backend MVP...
+2026-02-21 23:31:39,912 | INFO     | app | Initializing database schemas...
+2026-02-21 23:31:39,915 | INFO     | app | Database schemas initialized.
+2026-02-21 23:32:10,170 | INFO     | app | Created new voice clone: voice_a10fdda2
+2026-02-21 23:32:12,503 | INFO     | app | Registered new job: job_a70e11e5 with preferred engine wan2gp
+2026-02-21 23:32:12,533 | INFO     | app | [Wan2GP] Starting generation for job job_a70e11e5
+2026-02-21 23:32:12,536 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
+2026-02-21 23:32:12,538 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
+2026-02-21 23:32:17,556 | INFO     | app | [Wan2GP] Completed job job_a70e11e5 successfully under Native execution bridge.
+2026-02-21 23:34:00,339 | INFO     | app | Created new voice clone: voice_2952e24f
+2026-02-21 23:34:00,384 | INFO     | app | Registered new job: job_807e0823 with preferred engine wan2gp
+2026-02-21 23:34:00,415 | INFO     | app | [Wan2GP] Starting generation for job job_807e0823
+2026-02-21 23:34:00,422 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
+2026-02-21 23:34:00,423 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
+2026-02-21 23:34:05,447 | INFO     | app | [Wan2GP] Completed job job_807e0823 successfully under Native execution bridge.
+2026-02-22 00:50:33,694 | INFO     | app | Created new voice clone: voice_89c266cc
+2026-02-22 00:50:33,727 | INFO     | app | Registered new job: job_414896a9 with preferred engine wan2gp
+2026-02-22 00:50:33,756 | INFO     | app | [Wan2GP] Starting generation for job job_414896a9
+2026-02-22 00:50:33,761 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
+2026-02-22 00:50:33,761 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
+2026-02-22 00:50:38,793 | INFO     | app | [Wan2GP] Completed job job_414896a9 successfully under Native execution bridge.
+2026-02-22 00:57:10,138 | INFO     | app | Created new voice clone: voice_b9a46168
+2026-02-22 00:57:10,166 | INFO     | app | Registered new job: job_d4caf62e with preferred engine wan2gp
+2026-02-22 00:57:10,181 | INFO     | app | [Wan2GP] Starting generation for job job_d4caf62e
+2026-02-22 00:57:10,182 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
+2026-02-22 00:57:10,183 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
+2026-02-22 00:57:15,215 | INFO     | app | [Wan2GP] Completed job job_d4caf62e successfully under Native execution bridge.
+2026-02-22 00:58:07,909 | INFO     | app | Created new voice clone: voice_4264cd0c
+2026-02-22 00:58:07,939 | INFO     | app | Registered new job: job_7b1b5be1 with preferred engine wan2gp
+2026-02-22 00:58:07,956 | INFO     | app | [Wan2GP] Starting generation for job job_7b1b5be1
+2026-02-22 00:58:07,958 | INFO     | app | [Wan2GP] Python Env missing. Simulating fallback.
+2026-02-22 00:58:07,959 | INFO     | app | [Wan2GP] Awaiting GPU compute (simulated 5 secs over native repo)...
+2026-02-22 00:58:12,976 | INFO     | app | [Wan2GP] Completed job job_7b1b5be1 successfully under Native execution bridge.
