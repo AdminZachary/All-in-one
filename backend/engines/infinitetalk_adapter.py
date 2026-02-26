@@ -23,26 +23,10 @@ class InfiniteTalkAdapter(BaseEngineAdapter):
         # In a real scenario, this runs MeiGen-AI/InfiniteTalk:
         # subprocess.run(["python", "-m", "infinitetalk.inference", "--weights", str(model_path)])
         
-        # We simulate a 50% failure rate (CUDA OOM, memory error) to demonstrate the fallback mechanism to Wan2GP.
-        if random.random() < 0.5:
-            # We purposely simulate a process crash
-            app_logger.warning(f"[InfiniteTalk] Subprocess simulated failure for job {job_id} to trigger fallback.")
-            raise RuntimeError("InfiniteTalk engine subprocess encountered a VRAM OOM error or timeout.")
-            
-        output_file = OUTPUTS_DIR / f"{job_id}_infinitetalk.mp4"
-        create_mp4_cmd = f"python -c \"import time; time.sleep(5); open('{output_file.as_posix()}', 'w').write('mock infinitetalk video content')\""
-
-        process = await asyncio.create_subprocess_shell(
-            create_mp4_cmd,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        
-        stdout, stderr = await process.communicate()
-
-        if process.returncode != 0:
-            app_logger.error(f"[InfiniteTalk] Subprocess failed: {stderr.decode()}")
-            raise RuntimeError(f"InfiniteTalk Process Error: {stderr.decode()}")
+        # As per user request, we remove all "mock" generation.
+        # Since the true InfiniteTalk repository isn't bundled (tens of GBs), this will always fail and fallback.
+        app_logger.error(f"[InfiniteTalk] Native Engine block missing. Falling back.")
+        raise RuntimeError("InfiniteTalk 原生推理引擎未安装，自动回退到默认引擎。")
             
         app_logger.info(f"[InfiniteTalk] Completed job {job_id} successfully")
         return f"/data/outputs/{job_id}_infinitetalk.mp4"

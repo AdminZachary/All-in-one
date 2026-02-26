@@ -12,7 +12,7 @@ class CreateJobRequest(BaseModel):
     script_mode: Literal["ai", "manual"]
     script_input: str = Field(min_length=1)
     preferred_engine: Literal["auto", "wan2gp", "infinitetalk"] = "auto"
-    wangp_model: str = "Wan t2v 1.3B"
+    wangp_model: str = "Wan t2v 1.3B" # Changed to accept any string without validation failure
 
 class CreateJobResponse(BaseModel):
     job_id: str
@@ -29,3 +29,16 @@ class JobStatusResponse(BaseModel):
     fallback_reason: str | None = None
     generated_script: str | None = None
     result_url: str | None = None
+
+class ModelStatusResponse(BaseModel):
+    model_id: str
+    status: Literal["ready", "not_downloaded", "downloading"]
+    progress: int
+
+class ModelDownloadRequest(BaseModel):
+    model_id: str
+
+class ModelDownloadProgressResponse(BaseModel):
+    model_id: str
+    status: Literal["ready", "not_downloaded", "downloading"]
+    progress: int

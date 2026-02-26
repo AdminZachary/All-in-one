@@ -1,0 +1,71 @@
+# =================================================
+# InfiniteTalk & Wan2GP All-in-one — .gitignore
+# =================================================
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.spec.bak
+
+# ── Virtual Environments ──────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Wan2GP Native Engine ──────────────────────────
+# The isolated portable Python lives here (several GB)
+wan2gp_core/python_env/
+# Model weights are downloaded on first run — do NOT commit
+wan2gp_core/models/
+wan2gp_core/outputs/
+
+# ── Data & Runtime Artifacts ──────────────────────
+# User-uploaded files and generated videos
+data/uploads/
+data/outputs/
+data/hf_cache/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# ── Logs ──────────────────────────────────────────
+logs/
+*.log
+run_log*.txt
+build_log.txt
+
+# ── Error Dumps (dev scratch) ─────────────────────
+err*.txt
+crashlog.txt
+error*.txt
+error_dump.txt
+wgp_error.txt
+
+# ── Secrets ──────────────────────────────────────
+.env
+# .env.example is intentionally committed (no secrets)
+
+# ── PyInstaller Build Outputs ─────────────────────
+dist/
+build/
+*.spec.bak
+__pycache__/
+
+# ── IDE / OS ──────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Misc ──────────────────────────────────────────
+test_queue.json
+1.html

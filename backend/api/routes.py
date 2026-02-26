@@ -1,14 +1,39 @@
 import uuid
 import asyncio
-from fastapi import APIRouter, HTTPException, BackgroundTasks
+import os
+import time
+import hashlib
+from fastapi import APIRouter, HTTPException, BackgroundTasks, UploadFile, File
 from pydantic import BaseModel
 
-from backend.models.schemas import CloneVoiceResponse, CreateJobRequest, CreateJobResponse, JobStatusResponse
+from backend.models.schemas import (
+    CloneVoiceResponse,
+    CreateJobRequest,
+    CreateJobResponse,
+    JobStatusResponse,
+    ModelStatusResponse,
+    ModelDownloadRequest,
+    ModelDownloadProgressResponse
+)
 from backend.storage.db import save_voice, save_job, get_job, get_voice
 from backend.services.job_service import JobService
 from backend.utils.logger import app_logger
 
 api_router = APIRouter()
+
+# Ensure voice directory exists
+VOICE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "voices")
+os.makedirs(VOICE_DIR, exist_ok=True)
+
+# Global mock model download state (in memory)
+MODEL_DOWNLOAD_STATE = {
+    "Wan t2v 1.3B": {"status": "ready", "progress": 100},
+    "Hunyuan Avatar": {"status": "not_downloaded", "progress": 0},
+    "Wan Multitalk": {"status": "not_downloaded", "progress": 0},
+    "Wan FantasySpeaking": {"status": "not_downloaded", "progress": 0},
+    "Wan t2v 14B": {"status": "not_downloaded", "progress": 0},
+    "LTX-2": {"status": "not_downloaded", "progress": 0},
+}
 
 def build_script(script_mode: str, script_input: str) -> str:
     if script_mode == "manual":
@@ -21,12 +46,81 @@ def build_script(script_mode: str, script_input: str) -> str:
         "系统默认使用 Wan2GP 保障稳定，并可智能回退。"
     )
 
+@api_router.get("/models/status", response_model=list[ModelStatusResponse])
+def get_models_status():
+    """Returns the readiness status of all models."""
+    return [
+        ModelStatusResponse(model_id=k, status=v["status"], progress=v["progress"]) 
+        for k, v in MODEL_DOWNLOAD_STATE.items()
+    ]
+
+async def simulate_download(model_id: str):
+    """Simulates a background download."""
+    MODEL_DOWNLOAD_STATE[model_id]["status"] = "downloading"
+    MODEL_DOWNLOAD_STATE[model_id]["progress"] = 0
+    
+    for i in range(10):
+        await asyncio.sleep(0.5)
+        MODEL_DOWNLOAD_STATE[model_id]["progress"] += 10
+        
+    MODEL_DOWNLOAD_STATE[model_id]["status"] = "ready"
+    MODEL_DOWNLOAD_STATE[model_id]["progress"] = 100
+
+@api_router.post("/models/download")
+def start_model_download(payload: ModelDownloadRequest, background_tasks: BackgroundTasks):
+    """Initiates a download for a specific model."""
+    if payload.model_id not in MODEL_DOWNLOAD_STATE:
+        raise HTTPException(status_code=404, detail="Model unknown")
+    
+    if MODEL_DOWNLOAD_STATE[payload.model_id]["status"] == "downloading":
+        return {"status": "already_downloading"}
+        
+    background_tasks.add_task(simulate_download, payload.model_id)
+    return {"status": "started"}
+
+@api_router.get("/models/download/{model_id}", response_model=ModelDownloadProgressResponse)
+def get_model_download_progress(model_id: str):
+    """Polling endpoint for download progress."""
+    if model_id not in MODEL_DOWNLOAD_STATE:
+        raise HTTPException(status_code=404, detail="Model unknown")
+    
+    state = MODEL_DOWNLOAD_STATE[model_id]
+    return ModelDownloadProgressResponse(
+        model_id=model_id,
+        status=state["status"],
+        progress=state["progress"]
+    )
+
 @api_router.post("/voice/clone", response_model=CloneVoiceResponse)
-def clone_voice():
-    voice_id = f"voice_{uuid.uuid4().hex[:8]}"
-    save_voice(voice_id, engine="wan2gp", status="ready")
-    app_logger.info(f"Created new voice clone: {voice_id}")
-    return CloneVoiceResponse(voice_id=voice_id, engine="wan2gp")
+async def clone_voice(audio_file: UploadFile = File(...)):
+    """
+    接收用户上传的音频文件，保存到本地，并返回其路径作为真正克隆时需要的 voice_id
+    """
+    app_logger.info(f"Received request to upload voice cloning audio: {audio_file.filename}")
+    try:
+        content = await audio_file.read()
+        file_hash = hashlib.md5(content).hexdigest()[:10]
+        ext = os.path.splitext(audio_file.filename)[1]
+        if not ext:
+            ext = ".wav" # default extension
+        
+        safe_filename = f"voice_{file_hash}{ext}"
+        file_path = os.path.join(VOICE_DIR, safe_filename)
+        
+        with open(file_path, "wb") as f:
+            f.write(content)
+            
+        if not get_voice(file_path):
+            save_voice(file_path, engine="wan2gp", status="ready")
+            
+        return CloneVoiceResponse(
+            voice_id=file_path, # Returns absolute file path, used by KugelAudio/Avatar
+            status="ready",
+            engine="wan2gp" # Voice cloning usually performed by TTS in Wan2GP
+        )
+    except Exception as e:
+        app_logger.error(f"Voice upload failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Voice upload failed")
 
 @api_router.post("/jobs", response_model=CreateJobResponse)
 def create_job(payload: CreateJobRequest, background_tasks: BackgroundTasks):

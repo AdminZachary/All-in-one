@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo ==================================
-echo  Starting InfiniteTalk & Wan2GP   
+echo  Starting InfiniteTalk ^& Wan2GP   
 echo ==================================
 
 netstat -ano | findstr :8000 | findstr LISTENING >nul
@@ -20,6 +20,10 @@ if not exist .venv (
 echo =^> Activating environment and installing dependencies...
 call .venv\Scripts\activate
 pip install -q -r requirements.txt
+
+echo =^> Setting HuggingFace cache to S drive...
+set HF_HOME=S:\infinitetalk\data\hf_cache
+set TRANSFORMERS_CACHE=S:\infinitetalk\data\hf_cache\hub
 
 echo =^> Creating required directories...
 if not exist data\uploads mkdir data\uploads
